@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: MainCharacter.0004.ma
-//Last modified: Fri, Jul 10, 2020 05:27:10 PM
+//Last modified: Fri, Jul 10, 2020 05:33:16 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.0.3";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202004291615-7bd99f0972";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "0B60889E-46FF-0DE5-9FCB-D391475BD496";
+fileInfo "UUID" "995EDF6A-4AD8-2F85-52F0-7CA2A6600ABE";
 createNode transform -s -n "persp";
 	rename -uid "8E2A2086-4CF0-5F42-F95A-A8A09ECF3F30";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.933575715428795 38.528002280549245 55.985299326807834 ;
-	setAttr ".r" -type "double3" -32.138352831135229 3255.8000000006336 0 ;
+	setAttr ".t" -type "double3" 8.9132750469762083 14.942509306847631 29.624607632811603 ;
+	setAttr ".r" -type "double3" -22.5383528311297 3256.6000000001686 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "11239906-47CC-2517-2970-A599CB400FE8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 67.939672861091651;
+	setAttr ".coi" 32.757661214286621;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -10644,6 +10644,7 @@ createNode mesh -n "MainBodyShape" -p "MainBody";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "AdjustingBody";
 	rename -uid "6BB757A6-482E-3DE4-1E09-1984B17188B4";
