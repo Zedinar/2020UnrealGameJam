@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: FlyingEnemy.0003.ma
-//Last modified: Fri, Jul 10, 2020 10:37:24 PM
+//Last modified: Fri, Jul 10, 2020 10:39:08 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.0.3";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202004291615-7bd99f0972";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "6FD2BF6A-49A9-AE47-2715-378D1B042704";
+fileInfo "UUID" "06C9A0B2-40F6-6BC6-C71E-07A258FDF40F";
 createNode transform -s -n "persp";
 	rename -uid "BCF5BEDD-480D-E55E-08FC-C381143B9797";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.95763597349755791 2.0496648626469156 44.665547559632607 ;
-	setAttr ".r" -type "double3" 365.06164726089509 2520.5999999985875 -4.3486530429677936e-17 ;
+	setAttr ".t" -type "double3" 1.2262080298697562 19.685077424448259 42.60915912710449 ;
+	setAttr ".r" -type "double3" 341.66164726089266 2520.999999998573 3.7277802763304324e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1F674DD1-48EF-F583-31AE-D69FBBC25437";
 	setAttr -k off ".v" no;
