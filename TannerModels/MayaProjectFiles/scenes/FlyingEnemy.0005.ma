@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: FlyingEnemy.0005.ma
-//Last modified: Sat, Jul 11, 2020 10:40:55 PM
+//Last modified: Sat, Jul 11, 2020 11:46:42 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.0.3";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202004291615-7bd99f0972";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "45A13CCF-41E7-F161-7BC8-A28DDB1CF552";
+fileInfo "UUID" "B66BE732-48A0-883E-C58E-1EA7C9002BFB";
 createNode transform -s -n "persp";
 	rename -uid "BCF5BEDD-480D-E55E-08FC-C381143B9797";
 	setAttr ".v" no;
@@ -17238,22 +17238,22 @@ createNode joint -n "joint7" -p "joint2";
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".radi" 0.52523162758356323;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "37BA797D-49A5-2ADD-46CB-9BBA830D77B0";
+	rename -uid "F4C8923B-4102-98AF-7286-4D8BBA839B56";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D1E61F6A-4C3C-49C5-3227-2A9256A66E71";
+	rename -uid "72F5BCF7-4ECA-FD4D-F04F-9B811DE3F342";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "BC3A9F70-402F-3EEB-6354-D091CC449E72";
+	rename -uid "E953B46A-4C33-7024-C4AA-439A4501FF9F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F5D34576-4B3A-02F0-88E2-4794213A98D9";
+	rename -uid "745DE99C-426F-CE50-F208-ACAC757AF78B";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A004508C-47EE-FAC0-3947-C0B633606F72";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DEA26DF1-444B-12A9-718F-71B319B4EEB7";
+	rename -uid "003C6D46-430D-8A0D-B1D6-108404B35122";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D6049AC6-4E40-E154-2B74-188295DCBD5A";
 	setAttr ".g" yes;
@@ -17347,7 +17347,7 @@ createNode groupParts -n "groupParts1";
 createNode polyTweakUV -n "polyTweakUV1";
 	rename -uid "4BA28392-40C3-7B5C-E9C9-66B6FFE5AF66";
 	setAttr ".uopa" yes;
-	setAttr -s 555 ".uvtk";
+	setAttr -s 501 ".uvtk";
 	setAttr ".uvtk[3]" -type "float2" 0 -5.9604645e-08 ;
 	setAttr ".uvtk[4]" -type "float2" 2.9802322e-08 0 ;
 	setAttr ".uvtk[6]" -type "float2" 0 5.9604645e-08 ;
@@ -18086,8 +18086,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr ":defaultColorMgtGlobals.cme" "imagePlaneShape1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "imagePlaneShape1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "imagePlaneShape1.cmcp";
