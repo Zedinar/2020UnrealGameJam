@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: FlyingEnemy.0004.ma
-//Last modified: Sat, Jul 11, 2020 05:53:41 PM
+//Last modified: Sat, Jul 11, 2020 06:34:11 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.0.3";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202004291615-7bd99f0972";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "0D03F9AF-4BC0-83EE-E9A9-CF9157D9D2BF";
+fileInfo "UUID" "40D47419-4F0D-F608-2CF8-3DB198ADDB3C";
 createNode transform -s -n "persp";
 	rename -uid "BCF5BEDD-480D-E55E-08FC-C381143B9797";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.53149197766772005 9.2663109574845368 43.30994857710666 ;
-	setAttr ".r" -type "double3" 355.46164725449086 2878.5999999973333 -6.2138757676556006e-17 ;
+	setAttr ".t" -type "double3" 42.374939098657485 0.40667307370117989 -2.6008739971600869 ;
+	setAttr ".r" -type "double3" 367.4616472544879 2974.9999999996053 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1F674DD1-48EF-F583-31AE-D69FBBC25437";
 	setAttr -k off ".v" no;
@@ -17132,22 +17132,22 @@ createNode mesh -n "GunsShape" -p "Guns";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "092E145D-4407-DF25-690B-30B3468DAE42";
+	rename -uid "16607B70-4912-0C65-E21F-A0A20938E715";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "05973364-4C8E-48BD-BAB2-3BAC275E0DD4";
+	rename -uid "F2E05D30-4926-0E82-4763-7BA01C356132";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5F833CBD-4436-77F0-4F18-1DAA06A96155";
+	rename -uid "AC6C4769-432A-6942-A19E-88900E83FB96";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "91F0ACE8-4599-BA4B-B13F-9E9B61EB388D";
+	rename -uid "F9430C40-4EA8-3EDE-9CB8-5B88104249EF";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A004508C-47EE-FAC0-3947-C0B633606F72";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5EE75998-41BC-0110-AC18-DBB3D1C16B9F";
+	rename -uid "6BEC90D4-4AFB-3A7D-BC22-D28D825BFE2A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D6049AC6-4E40-E154-2B74-188295DCBD5A";
 	setAttr ".g" yes;
